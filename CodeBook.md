@@ -93,7 +93,8 @@ In order to match all the information for the same recording you can rely on the
 * you can use features.txt to know what measure is in each column of X_train.txt
 * from subject_train.txt you can know which of the 30 people the measurement comes from
 * from y_train.txt you can know what type of activity was performed. In the y_train.txt file you find the activity ID, which you need to decode using the activity_labels.txt
-(As already said, the same applies also for *_test.txt files)
+
+(As already said, the same applies also to the *_test.txt files)
 
 
 
