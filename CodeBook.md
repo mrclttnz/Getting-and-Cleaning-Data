@@ -151,13 +151,14 @@ selectedColumns = data[, c(selectedFeatures$feature.ID,562,563)]
 
 ```
 As a result a new data frame is created
-* selectedColumns - 68 variables (66 are means or standard deviations, plus subject.ID activity.ID), 10299 rows (one for each recording)
-
+* selectedColumns - 68 variables (66 are means or standard deviations, plus subject.ID and activity.ID), 10299 rows (one for each recording)
 
 
 
 ### Step 3. Uses descriptive activity names to name the activities in the data set
-
+The data frame created in the previous step (selectedColumns) identifies the activity performed during each recording with its activity ID. We are requested to include not only the activity ID, but also the activity name. This can easily be done with a join with the activity_labels data frame, by the activity.ID variable.
+As a result a new data frame is created
+* allData - 69 variables (66 are means or standard deviations, plus subject.ID, activity.ID and activity.name), 10299 rows (one for each recording)
 
 
 ### Step 4. Appropriately labels the data set with descriptive variable names. 
