@@ -124,8 +124,12 @@ The following data frames are created, each corresponding to one of the input fi
 * y_train - 1 column (activity.ID), 7352 rows (one for each recording in the training set)
 
 ### Step 1. Merges the training and the test sets to create one data set.
+In this step each pair of the three x_*, subject_* and y_* data frames are combined in a new data frame appending the rows of the two source data frames. The following data frames are created:
+* xData - 561 columns (named from V1 to V561) where each column corresponds to one feature, 10299 (=2947+7352) rows (one for each recording)
+* subjectIDs - 1 column (subject.ID), 10299 (=2947+7352) rows (one for each recording)
+* activityIDs - 1 column (activity.ID), 10299 (=2947+7352) rows (one for each recording)
 
-
+After this, a new data frame is created, putting together the information from the three data frames above. This data frame, named "data" has the in same row the subject.ID and activity.ID information, plus all the 561 measures of each of the features.
 
 ### Step 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
 
