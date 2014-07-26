@@ -162,7 +162,14 @@ As a result a new data frame is created
 
 
 ### Step 4. Appropriately labels the data set with descriptive variable names. 
+The data frame created in the previous step is very close to what we need, we are only missing proper names for the columns corresponding to the measurements, which are still named V1, V2, etc.
 
+When we have subset the columns of the data frame to keep only the ones we were interested in, we have created a data frame with feature index and feature name for each and only the features we wanted to keep. We have used the feature indexes to select only the columns we wanted, now we can use the feature names to assign names to the corresponding columns in the "allData" data frame.
+
+Since we are reformatting the data frame, we can also change the order of the columns to have subject.ID, activity.ID and activity.name as the first three columns, followed by the 66 means and standard deviations features, this time properly labelled.
+
+The output of this step is a new version of the allData data frame:
+* allData - 69 variables (subject.ID, activity.ID and activity.name, plus 66 means or standard deviations features), 10299 rows (one for each recording)
 
 
 ### Step 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
