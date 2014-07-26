@@ -112,7 +112,16 @@ As specified in the assignment the steps required are the following (I've added 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 ### Step 0. Read the data from the raw files into R
-
+Here in this step, the input text files are read into R data frames. In all the files the columns are separated by a blank character and no header line is available, so the data is read according to this.
+The following data frames are created, each corresponding to one of the input files:
+* activity_labels - 2 columns (activity.ID and activity.name) and 6 rows
+* features - 2 columns (feature.ID and feature.name) and 561 rows (one for each feature)
+* x_test - 561 columns (named from V1 to V561) where each column corresponds to one feature, 2947 rows (one for each recording in the test set)
+* x_train - 561 columns (named from V1 to V561) where each column corresponds to one feature, 7352 rows (one for each recording in the training set)
+* subject_test - 1 column (subject.ID), 2947 rows (one for each recording in the test set)
+* subject_train - 1 column (subject.ID), 7352 rows (one for each recording in the training set)
+* y_test - 1 column (activity.ID), 2947 rows (one for each recording in the test set)
+* y_train - 1 column (activity.ID), 7352 rows (one for each recording in the training set)
 
 ### Step 1. Merges the training and the test sets to create one data set.
 
