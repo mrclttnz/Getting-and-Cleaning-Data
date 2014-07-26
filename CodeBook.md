@@ -99,7 +99,8 @@ In order to match all the information for the same recording you can rely on the
 (As already said, the same applies also to the *_test.txt files)
 
 
-### The cleansing process
+The cleansing process
+=====================
 
 As specified in the assignment the steps required are the following (I've added a preliminary step 0 which consists in reading the files)
 
@@ -110,8 +111,32 @@ As specified in the assignment the steps required are the following (I've added 
 4. Appropriately labels the data set with descriptive variable names. 
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
+### Step 0. Read the data from the raw files into R
 
-### The output data
+
+### Step 1. Merges the training and the test sets to create one data set.
+
+
+
+### Step 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+
+
+
+### Step 3. Uses descriptive activity names to name the activities in the data set
+
+
+
+### Step 4. Appropriately labels the data set with descriptive variable names. 
+
+
+
+### Step 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+
+
+
+
+The output data
+===============
 
 
 
