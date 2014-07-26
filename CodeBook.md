@@ -32,7 +32,7 @@ For clarity, these are the instructions provided for the assignment
 In the following sections you can find the descriptions of the raw input data, the output data created and the cleansing process used to build it
 
 
-The Raw data
+The raw data
 ============
 As described in the assignment, the data can be downloaded from here https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and a full description can be found at this link http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 What follows here is a mix of extract from that documentation and personal notes to add a little more clarity on how the data is structured and how the files relate to each other.
@@ -99,12 +99,19 @@ In order to match all the information for the same recording you can rely on the
 (As already said, the same applies also to the *_test.txt files)
 
 
+### The cleansing process
 
+As specified in the assignment the steps required are the following (I've added a preliminary step 0 which consists in reading the files)
+
+0. Read the data from the raw files into R
+1. Merges the training and the test sets to create one data set.
+2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names. 
+5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 
 ### The output data
 
-
-### The cleansing process
 
 
