@@ -32,6 +32,8 @@ In the following sections you can find the descriptions of the raw input data, t
 
 
 ### The Raw data
+As described in the assignment, the data can be downloaded from here https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip and a full description can be found at this link http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+What follows here is a mix of extract from that documentation and personal notes to add a little more clarity on how the data is structured and how the files relate to each other.
 
 
 ### The output data
