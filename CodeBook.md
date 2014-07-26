@@ -173,8 +173,16 @@ The output of this step is a new version of the allData data frame:
 
 
 ### Step 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
+Here the request is to summarise the data frame from the previous step and get a new data set with one row for each combination of activity and subject. Each row, after subject.ID, activity.ID and activity.name, will have the average of each of the variables for those subject.ID, activity.ID, activity.name.<br>
+What this means can be made clearer with an example. For instance, if I take from the new data set the value in the tBodyAcc-mean()-X column for the row with subject.ID=1, activity.ID=1, activity.name="WALKING", what does it correspond to?
+If you want to calculate it manually, you have to subset "allData" and keep only the rows with subject.ID=1, activity.ID=1, activity.name="WALKING"; then you get all the values of the tBodyAcc-mean()-X column and calculate their average. That's the number you are looking for and the same applies for each of the rows and columns in the new data frame.
 
+Luckily all this calculation can be done easily leveraging the aggregate function in the plyr package. For the sake of better readability of the output file we can also order the dataset by activity.ID, activity.name, subject.ID
 
+The newly created tidy dataset is 
+* averages - 69 variables (activity.ID, activity.name, subject.ID, plus 66 average value columns), 180 rows (one for each combination of activity and subject, 6 activities x 30 subjects is 180 combinations)
+
+The last, final step is to write the content of averages to a text file (averages.txt), in the outData folder of the project. In order to make easier the QA step I'm also saving to a file (allData.txt) the content of allData.
 
 
 The output data
