@@ -81,15 +81,12 @@ Of all the files provided in the zip file, we are interested in the following on
 
 | File        | Description |
 |------------ |-------------| 
-| activity_labels.txt | This files simply lists the six activities for the experiment. For each activity ID and description are provided (1 WALKING, 2 WALKING_UPSTAIRS, ..., 6 LAYING)|
-| features.txt | |
-| X_train.txt | |
-| X_test.txt | |
-| subject_train.txt | |
-| subject_test.txt | |
-| y_train.txt | |
-| y_test.txt | |
-| features_info.txt | |
+| activity_labels.txt | This file simply lists the six activities for the experiment. For each activity ID and description are provided (1 WALKING, 2 WALKING_UPSTAIRS, ..., 6 LAYING)|
+| features.txt | This file lists the 561 features included in the data, providing for each of them their feature number and description. The list is in the same order in which the information appears in the dataset (feature #1 is the first column in the dataset, #2 the second, etc.)|
+| X_train.txt<br>X_test.txt | These two files contain (for the training and test sets, respectively) one row for each recording. Each row includes the 561 values of each of the features listed in the features.txt file above. |
+| subject_train.txt<br>subject_test.txt | These two files contain (for the training and test sets, respectively) one row for each recording. Each row has one value only, which is the ID of the subject (one of the 30 people partecipating to the experiment) that the recording belongs to. |
+| y_train.txt<br>y_test.txt | These two files contain (for the training and test sets, respectively) one row for each recording. Each row has one value only, which is the ID of the activity that has been recorded, as specified in the activity_labels.txt file (e.g. a value of 1 means that the recording is made while the subject was WALKING)|
+| features_info.txt | This file is a descriptive one, which specifies a little better what type of data is included, how it was recorded and processed. What is interesting for the sake of the assignement is the specification of how the 561 feature names have been built. One of the most important things to notice for us is the part of the feature name which specifies the type of measure, whether it's a mean, a standard deviation, a maximum value, etc. All mean and standard deviations, which we are requested to select in the assignment can be recognised because they have "mean()" or "std()" as part of their feature name  |
 
 
 ### The output data
