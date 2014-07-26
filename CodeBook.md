@@ -77,6 +77,20 @@ What follows here is a mix of extract from that documentation and personal notes
 > 
 > Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
 
+Of all the files provided in the zip file, we are interested in the following ones, which have been copied in the "indata" folder of this project:
+
+| File        | Description |
+|------------ |-------------| 
+| activity_labels.txt | This files simply lists the six activities for the experiment. For each activity ID and description are provided (1 WALKING, 2 WALKING_UPSTAIRS, ..., 6 LAYING)|
+| features.txt | |
+| X_train.txt | |
+| X_test.txt | |
+| subject_train.txt | |
+| subject_test.txt | |
+| y_train.txt | |
+| y_test.txt | |
+| features_info.txt | |
+
 
 ### The output data
 
