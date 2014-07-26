@@ -130,8 +130,29 @@ In this step each pair of the three x_*, subject_* and y_* data frames are combi
 * activityIDs - 1 column (activity.ID), 10299 (=2947+7352) rows (one for each recording)
 
 After this, a new data frame is created, putting together the information from the three data frames above. This data frame, named "data" has the in same row the subject.ID and activity.ID information, plus all the 561 measures of each of the features.
+* data - 563 columns (V1..V561, subject.ID, activity.ID), 10299 rows (one for each recording)
 
 ### Step 2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+The request in the assignment is to keep only the information of the features which are mean or standard deviation. Based on the feature information included in the feature_info.txt file, these are the features that have the string "mean()" or the string "std()" in their name. 
+
+In order to do that we need to start from the file features.txt (or the corresponding "features" data frame created from that file), which lists all the features with their order number and their name. We have to keep only the features whose name include "mean()" or "std()" and make note of their order numbers. Having that, we can keep only the columns from "data" which have those order numbers.
+
+It would be easy, but tedious and maybe error prone, to do this step manually and explicitly create a vector with all column numbers to be kept. Instead there's a way to do it in a programmatic way.
+We can leverage the grep() function with a regular expression, to create a row filter for the rows in the "features" data frame that have "mean()" or "std()" in their name (feature.name column). Once we have this row filter, we can subset the features and keep only the ones we are interested in; for each feature we still keep its feature.name and feature.ID information (remember feature.ID is also the column number in the "data" data frame).
+
+Having the list of feature.ID we want to keep, it's a piece of cake selecting only the corresponding columns from "data", remembering that we need to keep also the last two columns (562 - subject.ID and 563 - activity.ID).
+
+After all this maybe long explanation, in the end the code to do all this is made by only the three following instructions 
+```R
+selFeatureIdx = grep("(mean|std)[(][)]", features$feature.name, ignore.case=T)
+selectedFeatures = features[selFeatureIdx,]
+
+selectedColumns = data[, c(selectedFeatures$feature.ID,562,563)]
+
+```
+As a result a new data frame is created
+* selectedColumns - 68 variables (66 are means or standard deviations, plus subject.ID activity.ID), 10299 rows (one for each recording)
+
 
 
 
