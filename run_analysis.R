@@ -74,7 +74,7 @@ allData = allData[,c(ncol(allData)-1, 1, ncol(allData),seq(2,ncol(allData)-2))]
 #### Step 5: Creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
 averages = aggregate(. ~ activity.ID + activity.name  + subject.ID, allData, mean)
-averages = arrange(averages, activity.ID, activity.name)
+averages = arrange(averages, activity.ID, activity.name, subject.ID)
 averages[1:10,]
 
 
