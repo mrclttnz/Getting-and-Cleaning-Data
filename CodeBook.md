@@ -88,6 +88,16 @@ Of all the files provided in the zip file, we are interested in the following on
 | y_train.txt<br>y_test.txt | These two files contain (for the training and test sets, respectively) one row for each recording. Each row has one value only, which is the ID of the activity that has been recorded, as specified in the activity_labels.txt file (e.g. a value of 1 means that the recording is made while the subject was WALKING)|
 | features_info.txt | This file is a descriptive one, which specifies a little better what type of data is included, how it was recorded and processed. What is interesting for the sake of the assignement is the specification of how the 561 feature names have been built. One of the most important things to notice for us is the part of the feature name which specifies the type of measure, whether it's a mean, a standard deviation, a maximum value, etc. All mean and standard deviations, which we are requested to select in the assignment can be recognised because they have "mean()" or "std()" as part of their feature name  |
 
+In order to match all the information for the same recording you can rely on the row number which is the same in the three files "X_train.txt", "subject_train.txt" and "y_train.txt" (same thing applies to the test files). Given one row number you can select the rows with that row number in the three files and
+* from X_train.txt you can get the 561 measure values 
+* you can use features.txt to know what measure is in each column of X_train.txt
+* from subject_train.txt you can know which of the 30 people the measurement comes from
+* from y_train.txt you can know what type of activity was performed. In the y_train.txt file you find the activity ID, which you need to decode using the activity_labels.txt
+(As already said, the same applies also for *_test.txt files)
+
+
+
+
 
 ### The output data
 
