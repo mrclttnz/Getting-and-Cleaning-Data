@@ -11,6 +11,9 @@ This repository contains the files created for the course Assignment of the "Get
 * indata/ - folder for the project's input data (look at CodeBook.md document to know what each file in the folder is)
 * outdata/ - folder for the project's output data: averages.txt is the required output tidy dataset, allData.txt is the pre-summarisation data (in other words, the input to the summarisation step that creates averages.txt)
 
+#### How to run the code
+In case you want to run the project code, you can simply clone the repository to have everything on your machine. Then it's only a matter or changing the first line or the run_analysis.R program to reflect the path of the folder on your machine.
+
 
 #### Contact info
 For any information you can get in touch with the repository owner.<br>
