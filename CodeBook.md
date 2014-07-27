@@ -194,7 +194,75 @@ The file is a text file, with columns separated by the TAB character (this is a 
 Another choice made has been to keep the names of the columns as meaningful as they were in the source data: since I'm not an expert in this field (accelerometers and gyroscopes) I assume the feature labels used in the raw data are meaningful for people using this data. At any rate, to avoid having to refer to other files, I'm copying below the legend to understand the meaning of each variable, taken from the features_info.txt file provided along with the raw data.<br>
 Since the final data set contains averages of the original data, the only change to labels has been to add "Average.of." in front of column names (e.g. "Average.of.tBodyAcc-mean()-X", "Average.of.tBodyAcc-mean()-Y", etc.).
 
-
+ [1] activity.ID                           
+ [2] activity.name                         
+ [3] subject.ID                            
+ [4] Average.of.tBodyAcc-mean()-X          
+ [5] Average.of.tBodyAcc-mean()-Y          
+ [6] Average.of.tBodyAcc-mean()-Z          
+ [7] Average.of.tBodyAcc-std()-X           
+ [8] Average.of.tBodyAcc-std()-Y           
+ [9] Average.of.tBodyAcc-std()-Z           
+[10] Average.of.tGravityAcc-mean()-X       
+[11] Average.of.tGravityAcc-mean()-Y       
+[12] Average.of.tGravityAcc-mean()-Z       
+[13] Average.of.tGravityAcc-std()-X        
+[14] Average.of.tGravityAcc-std()-Y        
+[15] Average.of.tGravityAcc-std()-Z        
+[16] Average.of.tBodyAccJerk-mean()-X      
+[17] Average.of.tBodyAccJerk-mean()-Y      
+[18] Average.of.tBodyAccJerk-mean()-Z      
+[19] Average.of.tBodyAccJerk-std()-X       
+[20] Average.of.tBodyAccJerk-std()-Y       
+[21] Average.of.tBodyAccJerk-std()-Z       
+[22] Average.of.tBodyGyro-mean()-X         
+[23] Average.of.tBodyGyro-mean()-Y         
+[24] Average.of.tBodyGyro-mean()-Z         
+[25] Average.of.tBodyGyro-std()-X          
+[26] Average.of.tBodyGyro-std()-Y          
+[27] Average.of.tBodyGyro-std()-Z          
+[28] Average.of.tBodyGyroJerk-mean()-X     
+[29] Average.of.tBodyGyroJerk-mean()-Y     
+[30] Average.of.tBodyGyroJerk-mean()-Z     
+[31] Average.of.tBodyGyroJerk-std()-X      
+[32] Average.of.tBodyGyroJerk-std()-Y      
+[33] Average.of.tBodyGyroJerk-std()-Z      
+[34] Average.of.tBodyAccMag-mean()         
+[35] Average.of.tBodyAccMag-std()          
+[36] Average.of.tGravityAccMag-mean()      
+[37] Average.of.tGravityAccMag-std()       
+[38] Average.of.tBodyAccJerkMag-mean()     
+[39] Average.of.tBodyAccJerkMag-std()      
+[40] Average.of.tBodyGyroMag-mean()        
+[41] Average.of.tBodyGyroMag-std()         
+[42] Average.of.tBodyGyroJerkMag-mean()    
+[43] Average.of.tBodyGyroJerkMag-std()     
+[44] Average.of.fBodyAcc-mean()-X          
+[45] Average.of.fBodyAcc-mean()-Y          
+[46] Average.of.fBodyAcc-mean()-Z          
+[47] Average.of.fBodyAcc-std()-X           
+[48] Average.of.fBodyAcc-std()-Y           
+[49] Average.of.fBodyAcc-std()-Z           
+[50] Average.of.fBodyAccJerk-mean()-X      
+[51] Average.of.fBodyAccJerk-mean()-Y      
+[52] Average.of.fBodyAccJerk-mean()-Z      
+[53] Average.of.fBodyAccJerk-std()-X       
+[54] Average.of.fBodyAccJerk-std()-Y       
+[55] Average.of.fBodyAccJerk-std()-Z       
+[56] Average.of.fBodyGyro-mean()-X         
+[57] Average.of.fBodyGyro-mean()-Y         
+[58] Average.of.fBodyGyro-mean()-Z         
+[59] Average.of.fBodyGyro-std()-X          
+[60] Average.of.fBodyGyro-std()-Y          
+[61] Average.of.fBodyGyro-std()-Z          
+[62] Average.of.fBodyAccMag-mean()         
+[63] Average.of.fBodyAccMag-std()          
+[64] Average.of.fBodyBodyAccJerkMag-mean() 
+[65] Average.of.fBodyBodyAccJerkMag-std()  
+[66] Average.of.fBodyBodyGyroMag-mean()    
+[67] Average.of.fBodyBodyGyroMag-std()     
+[68] Average.of.fBodyBodyGyroJerkMag-mean()
+[69] Average.of.fBodyBodyGyroJerkMag-std() 
 
 
 
