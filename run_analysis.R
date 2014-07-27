@@ -75,9 +75,8 @@ allData = allData[,c(ncol(allData)-1, 1, ncol(allData),seq(2,ncol(allData)-2))]
 
 averages = aggregate(. ~ activity.ID + activity.name  + subject.ID, allData, mean)
 averages = arrange(averages, activity.ID, activity.name, subject.ID)
+names(averages) = c(names(averages[,1:3]),paste("Average.of.",names(averages[,4:ncol(averages)]),sep=""))
 averages[1:10,]
-
-
 
 write.table(allData, file="./outdata/allData.txt", sep="\t", row.names=F)
 write.table(averages, file="./outdata/averages.txt", sep="\t", row.names=F)
