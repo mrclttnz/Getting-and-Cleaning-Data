@@ -187,6 +187,15 @@ The last, final step is to write the content of averages to a text file (average
 
 The output data
 ===============
+The output data, created starting from the raw data and with the process described above is saved in a text file, named averages.txt and available in the outdata folder of this project.
+
+The file is a text file, with columns separated by the TAB character (this is a deliberate choice to make it easier importing the data into MS Excel, without having to bother with separators, etc.).
+
+Another choice made has been to keep the names of the columns as meaningful as they were in the source data: since I'm not an expert in this field (accelerometers and gyroscopes) I assume the feature labels used in the raw data are meaningful for people using this data. At any rate, to avoid having to refer to other files, I'm copying below the legend to understand the meaning of each variable, taken from the features_info.txt file provided along with the raw data.<br>
+Since the final data set contains averages of the original data, the only change to labels has been to add "Average.of." in front of column names (e.g. "Average.of.tBodyAcc-mean()-X", "Average.of.tBodyAcc-mean()-Y", etc.).
+
+
+
 
 
 
