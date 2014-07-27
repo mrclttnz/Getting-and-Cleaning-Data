@@ -286,3 +286,6 @@ The full explanation of the variables can be found (with a more technical view o
 * std() denotes a feature which is a standard deviation
 
 
+###### The allData.txt file
+The outdata folder contains also another text file, named allData.txt. This file is the dump of the data frame that has been summarised to get the requested averages.txt output. It has been saved as a file to make it easier to QA the results of the summarisation. You can ignore the file if you want to.
+
