@@ -201,12 +201,12 @@ The file is a text file, with columns separated by the TAB character (this is a 
 Another choice made has been to keep the names of the columns as meaningful as they were in the source data: since I'm not an expert in this field (accelerometers and gyroscopes) I assume the feature labels used in the raw data are meaningful for people using this data. At any rate, to avoid having to refer to other files, I'm copying below the legend to understand the meaning of each variable, taken from the features_info.txt file provided along with the raw data.<br>
 Since the final data set contains averages of the original data, the only change to labels has been to add "Average.of." in front of column names (e.g. "Average.of.tBodyAcc-mean()-X", "Average.of.tBodyAcc-mean()-Y", etc.).
 
-Regarding the units of measures for the variables, for this exercise it doesn't make too much sense to talk about units, because the original data had been normalised between -1 and 1. Being normalised, in the end all measures are just numbers.
+Regarding the units of measures for the variables [4] to [69] in the list below, for this exercise it doesn't make too much sense to talk about units, because the original data had been normalised between -1 and 1. Being normalised, in the end all measures are just numbers.
 
 ###### List of variables
- [1] activity.ID<br>
- [2] activity.name<br>
- [3] subject.ID<br>
+ [1] activity.ID (integer with values of 1 to 6)<br>
+ [2] activity.name (character with one of the following values: "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING")<br>
+ [3] subject.ID (integer with value of 1 to 30)<br>
  [4] Average.of.tBodyAcc-mean()-X<br>
  [5] Average.of.tBodyAcc-mean()-Y<br>
  [6] Average.of.tBodyAcc-mean()-Z<br>
